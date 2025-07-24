@@ -125,3 +125,19 @@ const doctorProfile = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+
+// API to update doctor profile data from  Doctor Panel
+const updateDoctorProfile = async (req, res) => {
+    try {
+
+        const { docId, fees, address, available } = req.body
+
+        await doctorModel.findByIdAndUpdate(docId, { fees, address, available })
+
+        res.json({ success: true, message: 'Profile Updated' })
+
+    } catch (error) {
+        console.log(error)
+        res.json({ success: false, message: error.message })
+    }
+}
