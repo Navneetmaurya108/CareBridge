@@ -17,3 +17,16 @@ const loginAdmin = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+
+// API to get all appointments list
+const appointmentsAdmin = async (req, res) => {
+    try {
+
+        const appointments = await appointmentModel.find({})
+        res.json({ success: true, appointments })
+
+    } catch (error) {
+        console.log(error)
+        res.json({ success: false, message: error.message })
+    }
+}
