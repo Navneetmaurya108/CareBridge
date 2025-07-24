@@ -182,3 +182,15 @@ const doctorDashboard = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+
+export {
+    loginDoctor,
+    appointmentsDoctor,
+    appointmentCancel,
+    doctorList,
+    changeAvailablity,
+    appointmentComplete,
+    doctorDashboard,
+    doctorProfile,
+    updateDoctorProfile
+}
