@@ -149,4 +149,4 @@ export {
     addDoctor,
     allDoctors,
     adminDashboard
-}
+};

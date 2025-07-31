@@ -355,4 +355,4 @@ export {
     verifyRazorpay,
     paymentStripe,
     verifyStripe
-}
+};

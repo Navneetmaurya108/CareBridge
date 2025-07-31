@@ -197,4 +197,4 @@ export {
     doctorDashboard,
     doctorProfile,
     updateDoctorProfile
-}
+};

@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken'
+import jwt from 'jsonwebtoken';
 
 // doctor authentication middleware
 const authDoctor = async (req, res, next) => {
